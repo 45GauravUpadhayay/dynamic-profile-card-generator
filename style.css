@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,body{
+    width: 100%;
+    min-height: 100%;
+}
+
+body{
+    background: linear-gradient(135deg,#0f172a,#111827);
+    color: white;
+}
+
+#main{
+    padding: 40px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 350px;
+}
+
+input{
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    background: #1f2937;
+    color: white;
+    outline: none;
+    font-size: 15px;
+}
+
+input::placeholder{
+    color: #9ca3af;
+}
+
+input[type="submit"]{
+    background: #d4af37;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover{
+    transform: translateY(-2px);
+}
+
+.card{
+    width: 400px;
+    margin-top: 35px;
+    padding: 25px;
+    background: #1a1a1a;
+    border: 1px solid #d4af37;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+    transition: 0.3s ease;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+.profile{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #d4af37;
+    margin-bottom: 15px;
+}
+
+.profile img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card h2{
+    color: white;
+    margin-bottom: 6px;
+}
+
+.card h5{
+    color: #d4af37;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.card p{
+    color: #cbd5e1;
+    line-height: 1.6;
+    font-size: 14px;
+}
